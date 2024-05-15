@@ -1,0 +1,91 @@
+.container {
+
+    text-align: center;
+    
+    }
+    
+    .hotel-form {
+      display: inline-block;
+      text-align: left;
+      max-width: 600px;
+      margin: auto;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%; 
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    
+    input[type="file"] {
+      width: 100%;
+      padding: 8px;
+    }
+    
+    button {
+      padding: 15px 40px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: block; /* Add this line to make the button a block element */
+      margin: auto; 
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+      
+    }
+    
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    
+    .description-textarea {
+      width: 612px;
+    }
+    
+    .facilities-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .facility-label {
+      margin-right: 10px;
+    }
+    
+    .facility-label:nth-child(4n) {
+      margin-right: 0; 
+    }
+    
+  
+    .image-preview-container {
+      display: flex;
+      flex-wrap: wrap;
+      border-color: black;
+    }
+    
+    .image-preview {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      
+    }
+    
+    
