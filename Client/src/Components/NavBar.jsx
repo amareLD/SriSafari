@@ -10,9 +10,10 @@ import { logout } from '../slices/authSlice';
 const NavBar = () => {
   let Links = [
     { name: 'HOME', link: '/' },
-    { name: 'TRAVEL', link: '/place-selection' },
+    { name: 'TRIPS', link: '/place-selection' },
     { name: 'ACCOMADATIONS', link: '/acc-selection' },
     { name: 'LIST A PLACE', link: '/hotel-form' },
+    { name: 'Q/A', link: '/hotel-form' },
    
   ];
   let [open, setOpen] = useState(false);
@@ -40,7 +41,7 @@ const NavBar = () => {
 
 
   return (
-    <div className="z-30 shadow-lg w-full fixed top-0 left-0 bg-cyan-300 bg-opacity-40">
+    <div className="h-20 z-30 shadow-lg w-full fixed top-0 left-0 bg-yellow-500 bg-opacity-40">
       <div className="md:flex items-center justify-between bg-transparent py-4 md:px-10 px-7">
         {/* logo section */}
         <div className="font-extrabold text-2xl cursor-pointer flex items-center gap-1 text-cyan-400">
