@@ -69,7 +69,7 @@ const Section = styled.section`
     .testimonial {
       background-color: aliceblue;
       padding: 2rem;
-      border-radius: 0.5rem;
+      border-radius: 0.1rem;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       transition: 0.3s ease-in-out;
       &:hover {

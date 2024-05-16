@@ -95,12 +95,12 @@ export default function Recommend() {
         <div className="items-center  mb-2 mt-2 pt-2 lg:w-1/9 ">
           <Link
             to="/place-selection"
-            className="btn w-60 h-10 text-center   py-4 px-20 rounded-full bg-cyan-500  text-white  font-semibold  duration-500   items-center hover:bg-cyan-600 hover:text-gray-100 flex flex-raw"
+            className="btn border-t-2 border-l-2 border-b-8 border-r-4 hover:border-2   border-black duration-200 w-60 h-10 text-center pl-20 py-4 rounded-sm bg-yellow-500  text-white  font-semibold    items-center hover:bg-yellow-600 hover:text-gray-100 flex flex-raw"
           >
             visit more
           </Link>
         </div>
-        <hr className="shadow-lg mt-10 h-0.5 w-4/5 bg-cyan-200 rounded-full " />
+        <hr className="shadow-lg mt-10 h-0.5 w-4/5 bg-yellow-200 rounded-sm " />
       </div>
 
       <div className="pb-5 bg-white items-center flex flex-col  ">
@@ -115,12 +115,12 @@ export default function Recommend() {
         <div className="items-center  mb-2 mt-2 pt-2 lg:w-1/9 ">
           <Link
             to="/place-selection"
-            className="btn w-60 h-10 text-center   py-4 px-20 rounded-full bg-cyan-500  text-white  font-semibold  duration-500   items-center hover:bg-cyan-600 hover:text-gray-100 flex flex-raw"
+            className="btn border-t-2 border-l-2 border-b-8 border-r-4 hover:border-2   border-black duration-200 w-60 h-10 text-center pl-20 py-4 rounded-sm bg-yellow-500  text-white  font-semibold    items-center hover:bg-yellow-600 hover:text-gray-100 flex flex-raw"
           >
             visit more
           </Link>
         </div>
-        <hr className="shadow-lg mt-10 h-0.5 w-4/5 bg-cyan-200 rounded-full " />
+        <hr className="shadow-lg mt-10 h-0.5 w-4/5 bg-yellow-200 rounded-sm " />
 
         <div className="pb-5 bg-white items-center flex flex-col  ">
           <h2 className="text-left font-bold text-4xl pt-5 px-5">
@@ -134,12 +134,12 @@ export default function Recommend() {
           <div className="items-center  mb-2 mt-2 pt-2 lg:w-1/9 ">
             <Link
               to="/place-selection"
-              className="btn w-60 h-10 text-center   py-4 px-20 rounded-full bg-cyan-500  text-white  font-semibold  duration-500   items-center hover:bg-cyan-600 hover:text-gray-100 flex flex-raw"
+              className="btn border-t-2 border-l-2 border-b-8 border-r-4 hover:border-2   border-black duration-200 w-60 h-10 text-center pl-20 py-4 rounded-sm bg-yellow-500  text-white  font-semibold    items-center hover:bg-yellow-600 hover:text-gray-100 flex flex-raw"
             >
               visit more
             </Link>
           </div>
-          <hr className="shadow-lg mt-10 h-0.5 w-4/5 bg-cyan-200 rounded-full " />
+          <hr className="shadow-lg mt-10 h-0.5 w-4/5 bg-yellow-200 rounded-sm " />
         </div>
       </div>
     </div>

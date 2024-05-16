@@ -27,7 +27,9 @@ const PlacesSelection = () => {
   const handleSearch = async (e) => {
     // e.preventDefault();
 
-    setQuery(selectedDistrict +'+'+ selectedAttractionType + '+srilanka+Attractions+');
+    setQuery(
+      selectedDistrict + '+' + selectedAttractionType + '+srilanka+Attractions+'
+    );
     try {
       const response = await axios.get('/api/places', {
         params: {
@@ -60,7 +62,7 @@ const PlacesSelection = () => {
           <div className=" mb-4 flex-1 lg:w-4/9 ">
             <label className="  font-bold block mb-1 ">District</label>
             <select
-              className=" block w-full h-1/2 shadow-inner bg-zinc-200 border-gray-300 rounded-md  focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              className="border-t-2 border-l-2 border-b-8 border-r-4 hover:border-2   border-black duration-200 block bg-yellow-100 w-full h-1/2 shadow-inner  rounded-sm  focus:border-orange-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               value={selectedDistrict}
               onChange={(e) => setSelectedDistrict(e.target.value)}
             >
@@ -77,7 +79,7 @@ const PlacesSelection = () => {
           <div className="mb-4 flex-1 lg:w-4/9 ">
             <label className="font-bold block mb-1">Attraction Type</label>
             <select
-              className="block  w-full h-1/2  bg-zinc-200 border-gray-300 rounded-md shadow-inner focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              className="border-t-2 border-l-2 border-b-8 border-r-4 hover:border-2   border-black duration-200 block bg-yellow-100 w-full h-1/2 shadow-inner  rounded-sm  focus:border-orange-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               value={selectedAttractionType}
               onChange={(e) => setSelectedAttractionType(e.target.value)}
             >
@@ -93,7 +95,7 @@ const PlacesSelection = () => {
           {/* Search button */}
           <div className="mb-4 mt-5 pt-10 flex-0 lg:w-1/9 ">
             <button
-              className="w-auto bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded"
+              className="btn border-t-2 border-l-2 border-b-8 border-r-4 hover:border-2   border-black duration-200 w-auto bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-sm"
               onClick={handleSearch}
             >
               Search

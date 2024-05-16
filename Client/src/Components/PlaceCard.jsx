@@ -8,7 +8,7 @@ const PlaceCard = ({ place }) => {
     place?.photos?.length > 0 ? place.photos[0].photo_reference : '';
 
   return (
-    <div className="place-card relative w-[360px] p-0 rounded-lg shadow-md mb-1 bg-white hover:scale-105 transition-all mt-[20px] cursor-pointer flex flex-col items-center">
+    <div className="place-card relative w-[360px] p-0 rounded-sm shadow-md mb-1 bg-white hover:scale-105 transition-all mt-[20px] cursor-pointer flex flex-col items-center">
       <Link
         to={`/place-description/${place.place_id}?name=${place.name}&address=${
           place.formatted_address
@@ -24,7 +24,7 @@ const PlaceCard = ({ place }) => {
           <img
             src={`https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photoReference}&key=AIzaSyBfN0CXp59MUkkj4gYAGqUlNLEtCH3cPCw`}
             alt={place.name}
-            className="p-1 rounded-lg object-cover shadow-md hover:shadow-lg transition duration-300 w-full h-64"
+            className="p-1 rounded-sm object-cover shadow-md hover:shadow-lg transition duration-300 w-full h-64"
           />
         )}
 

@@ -42,14 +42,16 @@ const NavBar = () => {
     <div className="h-20 z-30 shadow-lg w-full fixed top-0 left-0 bg-yellow-100 bg-opacity-40">
       <div className="md:flex items-center justify-between bg-transparent py-4 md:px- px-7 ">
         {/* logo section */}
-        <div className="px-40 font-extrabold text-2xl cursor-pointer flex items-center gap-1 text-yellow-400">
+        <div className="    ml-40 p-1 pr-20 font-extrabold text-2xl  flex items-center gap-1 text-yellow-400">
           <img
             src="/sri-lanka-flag-round-circle-icon.svg" // Reference to the SVG in the public folder
             alt="Sri Lankan Flag"
-            className="hover:text-yellow-400 w-10 h-10 text-yellow-700"
+            className=" cursor-pointer w-10 h-10 text-yellow-700"
           />{' '}
           {/* WorldIcon */}
-          <span className="0 hover:text-orange-600">SriSafari</span>
+          <span className="0 cursor-pointer hover:text-orange-600 ">
+            SriSafari
+          </span>
         </div>
         {/* Menu icon */}
         <div
@@ -63,10 +65,10 @@ const NavBar = () => {
           }`}
         >
           {Links.map((link) => (
-            <li className="md:ml-8 md:my-0 my-7 font-semibold">
+            <li className="text-center border-t-2  border-l-2 border-b-8 border-r-4 hover:border-2   border-black duration-200 md:ml-4 md:my-0 my-7 font-semibold w-40 ">
               <a
                 href={link.link}
-                className="text-gray-800 hover:text-yellow-400 duration-500"
+                className="text-gray-800 hover:text-yellow-400 duration-500 "
               >
                 {link.name}
               </a>
@@ -75,7 +77,7 @@ const NavBar = () => {
 
           {userInfo ? (
             <div className="relative ml-4 flex flex-raw">
-              <button className="rounded-sm w-auto flex items-center justify-center bg-yellow-100  text-orange-400  font-semibold px-3 py-1 duration-500 static md:ml-80 hover:bg-orange-600 hover:text-gray-100">
+              <button className="rounded-sm w-auto flex items-center justify-center bg-yellow-100  text-orange-400  font-semibold px-3 py-1 duration-500 static md:ml-40 hover:bg-orange-600 hover:text-gray-100 ">
                 <FaHeart className="mr-1 " />
                 Whishlist
               </button>
@@ -116,7 +118,7 @@ const NavBar = () => {
           ) : (
             <Link
               to="/login"
-              className="btn bg-cyan-500  rounded-sm text-white md:ml-80 font-semibold px-3 py-1 duration-500 md:static flex flex-col items-center hover:bg-cyan-600 hover:text-gray-100"
+              className="btn bg-yellow-500  rounded-sm text-white md:ml-80 font-semibold px-3 py-1 duration-500 md:static flex flex-col items-center hover:bg-yellow-600 hover:text-gray-100"
               style={{ width: '80px' }}
             >
               Log in

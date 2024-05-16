@@ -24,11 +24,14 @@ export default function Hero() {
       </div>
       <div className="content pb-48">
         <div className="title ">
-          <h1>TRAVEL TO EXPLORE</h1>
+          <h1 className=" font-extrabold">TRAVEL TO EXPLORE</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-            natus, enim ipsam magnam odit deserunt itaque? Minima earum velit
-            tenetur!
+            Welcome to Sri Lanka, where adventure and serenity intertwine to
+            create an unforgettable journey. From pristine beaches to ancient
+            ruins, lush tea plantations to vibrant festivals, Sri Lanka beckons
+            you to explore its rich tapestry of experiences. your adventure
+            starts here. Join us as we uncover the beauty and magic of Sri Lanka
+            together.
           </p>
         </div>
         <div className="search">
@@ -40,7 +43,7 @@ export default function Hero() {
                 District
               </label>
               <select
-                className=" block w-full h-1/2 shadow-inner bg-zinc-200 border-gray-300 rounded-md  focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                className=" block w-full h-1/2 shadow-inner bg-yellow-100 border-t-2 border-l-2 border-b-8 border-r-4 hover:border-2   border-black duration-200  rounded-sm  focus:border-orange-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                 value={selectedDistrict}
                 onChange={(e) => setSelectedDistrict(e.target.value)}
               >
@@ -59,7 +62,7 @@ export default function Hero() {
                 Attraction Type
               </label>
               <select
-                className="block  w-full h-1/2  bg-zinc-200 border-gray-300 rounded-md shadow-inner focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                className="block  w-full h-1/2  bg-yellow-100 border-t-2 border-l-2 border-b-8 border-r-4 hover:border-2   border-black duration-200  rounded-sm shadow-inner focus:border-orange-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                 value={selectedAttractionType}
                 onChange={(e) => setSelectedAttractionType(e.target.value)}
               >
@@ -73,10 +76,10 @@ export default function Hero() {
             </div>
 
             {/* Search button */}
-            <div className="items-center  mb-2 mt-16 pt-2 lg:w-1/9 ">
+            <div className="items-center mb-4  mt-12 pt-4 lg:w-1/9 ">
               <Link
                 to="/place-selection"
-                className="btn shadow-lg w-60 h-10 text-center  px-24 rounded-full bg-cyan-500  text-white  font-semibold  duration-500   items-center hover:bg-cyan-600 hover:text-gray-100 flex flex-raw"
+                className=" btn border-t-2 border-l-2 border-b-8 border-r-4 hover:border-2   border-black duration-200   shadow-lg w-60 h-14 text-center  px-24  rounded-sm bg-yellow-500  text-white  font-semibold    items-center  flex flex-raw"
               >
                 Search
               </Link>

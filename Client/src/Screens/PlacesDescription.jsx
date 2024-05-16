@@ -42,7 +42,7 @@ const PlacesDescription = (places) => {
           <img
             src={decodeURIComponent(image)}
             alt={name}
-            className="p-1 rounded-2xl object-cover shadow-md hover:shadow-lg transition duration-300 w-full h-96"
+            className="  p-1 rounded-sm object-cover shadow-md hover:shadow-lg transition duration-300 w-full h-96"
           />
           <button className=" absolute p-1 bg-transparent  text-gray-100 font-semibold hover:text-cyan-400 text-6xl py-0.5 px-5  border-blue-500 hover:border-transparent rounded-full w-auto h-auto shadow-3xl  hover:scale-110 transition-all">
             <span className=" shadow-3xl">+</span>
@@ -64,7 +64,7 @@ const PlacesDescription = (places) => {
       <div className="mx-40 flex flex-row flex-grow">
         <div className="w-full sm:w-3/5 flex flex-row flex-grow bg-white">
           {/* Main Content */}
-          <div className="flex flex-col flex-grow">
+          <div className="flex flex-col flex-grow text-left">
             {/* Name, Address, and Contact Details */}
             <div className="mb-4   flex flex-row">
               <div className="w-9/12 mb-4  ">
@@ -78,12 +78,12 @@ const PlacesDescription = (places) => {
                 </p>
               </div>
               <div
-                className={`pt-3 h-1/5 w-3/12 mx-10 my-7  border rounded-lg shadow-md  ${
+                className={`btn border-t-2 border-l-1 border-b-4 border-r-2    border-black duration-200 pt-2 h-2/6 w-3/12 mx-10 my-7  border rounded-lg shadow-md  ${
                   isOpen === 'true' ? 'bg-green-200' : 'bg-red-200'
                 }`}
               >
                 <p
-                  className={`text-md text-center  mt-0  font-bold ${
+                  className={`text-md text-center   font-bold ${
                     isOpen === 'true' ? 'text-green-600' : 'text-red-600'
                   }`}
                 >
@@ -95,7 +95,7 @@ const PlacesDescription = (places) => {
             {/* Description */}
             <div className="mb-4">
               {/* <h3 className="text-xl font-bold mb-4">Description</h3> */}
-              <p className="mb-2">
+              <p className="mb-2 text-left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 sagittis, tellus in scelerisque malesuada, eros sem porttitor
                 magna, sed sodales turpis nisl quis justo. Pellentesque vitae
@@ -152,7 +152,7 @@ const PlacesDescription = (places) => {
           </div>
 
           <div className="px-5 md:h-full md:w-full ">
-            <div className="bg-gray-100 w-full  p-2 rounded-lg">
+            <div className="bg-gray-100 w-full  p-2 rounded-sm">
               <div className="mx-0 flex items-center gap-4 pt-0 pb-8">
                 <img
                   className="w-16 h-16 rounded-full object-cover"
@@ -253,7 +253,7 @@ const PlacesDescription = (places) => {
                   <div className="mt-4">
                     <button
                       type="submit"
-                      className="px-4 py-2 bg-cyan-500 text-white rounded-md hover:bg-cyan-600 focus:outline-none"
+                      className="rounded-sm px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 focus:outline-none"
                     >
                       Submit
                     </button>

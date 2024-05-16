@@ -96,7 +96,7 @@ const AccommodationSelection = () => {
   const [places, setPlaces] = useState([]);
   useEffect(() => {
     handleSearch();
-  }, [selectedDistrict, selectedListingType]); 
+  }, [selectedDistrict, selectedListingType]);
 
   const handleChange = (e) => {
     setQuery(e.target.value);
@@ -145,7 +145,7 @@ const AccommodationSelection = () => {
           <div className=" mb-4 flex-1 lg:w-4/9 ">
             <label className="  font-bold block mb-1 ">District</label>
             <select
-              className=" block w-full h-1/2 shadow-inner bg-zinc-200 border-gray-300 rounded-md  focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              className=" border-t-2 border-l-2 border-b-8 border-r-4 hover:border-2   border-black duration-200 block bg-yellow-100 w-full h-1/2 shadow-inner  rounded-sm  focus:border-orange-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               value={selectedDistrict}
               onChange={(e) => setSelectedDistrict(e.target.value)}
             >
@@ -162,7 +162,7 @@ const AccommodationSelection = () => {
           <div className="mb-4 flex-1 lg:w-4/9 ">
             <label className="font-bold block mb-1">Listing Type</label>
             <select
-              className="block  w-full h-1/2  bg-zinc-200 border-gray-300 rounded-md shadow-inner focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              className="border-t-2 border-l-2 border-b-8 border-r-4 hover:border-2   border-black duration-200 block bg-yellow-100 w-full h-1/2 shadow-inner  rounded-sm  focus:border-orange-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               value={selectedListingType}
               onChange={(e) => setSelectedListingType(e.target.value)}
             >
@@ -178,7 +178,7 @@ const AccommodationSelection = () => {
           {/* Search button */}
           <div className="mb-4 mt-5 pt-10 flex-0 lg:w-1/9 ">
             <button
-              className="w-auto bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              className=" w-auto bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-sm"
               onClick={handleSearch}
             >
               Search
