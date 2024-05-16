@@ -17,12 +17,12 @@ const HotelCard = ({ place }) => {
         }&lat=${place.geometry.location.lat}&lng=${
           place.geometry.location.lng
         }&image=${encodeURIComponent(
-          `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photoReference}&key=AIzaSyA3upiukUN6BVejRSvw0ULJUTBtNMD5Wbk`
+          `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photoReference}&key=AIzaSyBfN0CXp59MUkkj4gYAGqUlNLEtCH3cPCw`
         )}`}
       >
         {photoReference && (
           <img
-            src={`https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photoReference}&key=AIzaSyA3upiukUN6BVejRSvw0ULJUTBtNMD5Wbk`}
+            src={`https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photoReference}&key=AIzaSyBfN0CXp59MUkkj4gYAGqUlNLEtCH3cPCw`}
             alt={place.name}
             className=" p-1 rounded-lg object-cover shadow-md hover:shadow-lg transition duration-300 w-full h-64"
           />

@@ -8,7 +8,7 @@ function ImageComponent(place) {
     <div className='bg-gray-800 h-10'>
     {photoReference && (
         <img
-          src={`https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photoReference}&key=AIzaSyA3upiukUN6BVejRSvw0ULJUTBtNMD5Wbk`}
+          src={`https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photoReference}&key=AIzaSyBfN0CXp59MUkkj4gYAGqUlNLEtCH3cPCw`}
           alt={place.name}
           className="rounded-lg object-cover shadow-md hover:shadow-lg transition duration-300 w-full h-64"
         />

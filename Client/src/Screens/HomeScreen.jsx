@@ -6,7 +6,7 @@ import Testimonials from './../Components/Testimonials';
 
 function HomeScreen() {
   return (
-    <div className="bg-white pt-8 ">
+    <div className="bg-white pt-20 ">
       <Hero />
       <ScrollToTop />
       <Recommend />

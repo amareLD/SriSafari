@@ -32,7 +32,7 @@ function GoogleMapView({ lat, lng }) {
   return (
     <div className="rounded-lg shadow-2xl p-4">
       <LoadScript
-        googleMapsApiKey={'AIzaSyA3upiukUN6BVejRSvw0ULJUTBtNMD5Wbk'}
+        googleMapsApiKey={'AIzaSyBfN0CXp59MUkkj4gYAGqUlNLEtCH3cPCw'}
         // mapIds={['327f00d9bd231a33']}
       >
         <GoogleMap
