@@ -40,7 +40,7 @@ const HotelDescription = () => {
           <img
             src={decodeURIComponent(image)}
             alt={name}
-            className="p-1 rounded-2xl object-cover shadow-md hover:shadow-lg transition duration-300 w-full h-96"
+            className="p-1 rounded-sm object-cover shadow-md hover:shadow-lg transition duration-300 w-full h-96"
           />
           <button className=" absolute p-1 bg-transparent  text-gray-100 font-semibold hover:text-cyan-400 text-6xl py-0.5 px-5  border-blue-500 hover:border-transparent rounded-full w-auto h-auto shadow-3xl  hover:scale-110 transition-all">
             <span className=" shadow-3xl">+</span>
@@ -69,7 +69,7 @@ const HotelDescription = () => {
           {/* Main Content */}
           <div className="flex flex-col flex-grow">
             {/* Name, Address, and Contact Details */}
-            <div className="mb-4">
+            <div className="mb-4 text-left">
               <h2 className="text-4xl font-extrabold mb-4 text-left">{name}</h2>
               <p className="mb-4 text-xl text-gray-500">{address} </p>
               <p className="mb-2">
@@ -80,7 +80,7 @@ const HotelDescription = () => {
             {/* Description */}
             <div className="mb-4">
               {/* <h3 className="text-xl font-bold mb-4">Description</h3> */}
-              <p className="mb-2">
+              <p className="mb-2 text-left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 sagittis, tellus in scelerisque malesuada, eros sem porttitor
                 magna, sed sodales turpis nisl quis justo. Pellentesque vitae
@@ -123,7 +123,7 @@ const HotelDescription = () => {
           {/* Reviews */}
           <div className="mb-4 md:mb-0 md:w-full md:h-auto   items-center">
             <div
-              className={`mx-10 w-64 border rounded-lg shadow-md p-2 ${
+              className={`btn border-t-2 border-l-1 border-b-4 border-r-2    border-black duration-200 pt-2 h-1/6 w-3/12 mx-10 my-7  border rounded-lg shadow-md ${
                 isOpen === 'true' ? 'bg-green-200' : 'bg-red-200'
               }`}
             >

@@ -114,7 +114,7 @@ export default function LogIn() {
             />
           </label>
           <p className="forgot-pass">Forgot password?</p>
-          <button type="button" className="submit " onClick={handleSignIn}>
+          <button type="button" className="submit btn border-t-2 border-l-1 border-b-4 border-r-2    border-black duration-200 pt-2   border rounded-sm " onClick={handleSignIn}>
            Log In
           </button>
           {/* <button type="button" className="fb-btn">
